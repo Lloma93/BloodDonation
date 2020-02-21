@@ -14,13 +14,28 @@
 
         <button>Quero ajudar</button>
     </header>
+
+    <section class="form">
+        <form (ngSubmit)="onSubmit()" #form="ngForm">
+            <h2>Entre na lista de doadores</h2>
+            <input type="text" name="name" placeholder="Nome Completo" />
+            <input type="text" name="email" placeholder="Email" />
+            <input type="text" name="blood" placeholder="Tipo sanguíneo" />
+        </form>
+    </section>
+    
     <main>
         <h2>Últimos doadores</h2>
         <section class="donors">
-
+            <div class="donor">
+                <div class="blood">AB+</div>
+                <p>Diego</p>
+            </div>
         </section>
     </main>
-    <footer></footer>
+    <footer> Com ❤ LLoma93 
+        <p> + RocketSeat</p>
+    </footer>
 </body>
 
 </html>
