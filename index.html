@@ -2,11 +2,13 @@
 <lang html>
 <head>
     <title>Blood Donation</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <h1>DOE</h1>
+        <img src="./assets/logo.png" alt="Imagem de DOE" class="logo">        
         <h2>A sua doação importa</h2>
         <p>Até 3 vidas com uma doação</p>
         <p> Mais de 38.000 doações são necessárias todos os dias</p>
@@ -16,25 +18,41 @@
     </header>
 
     <section class="form">
-        <form (ngSubmit)="onSubmit()" #form="ngForm">
-            <h2>Entre na lista de doadores</h2>
+        <h2>Entre na lista de doadores</h2>
+        <form>
             <input type="text" name="name" placeholder="Nome Completo" />
             <input type="text" name="email" placeholder="Email" />
             <input type="text" name="blood" placeholder="Tipo sanguíneo" />
+            
+            <button>Quero ajudar</button>
         </form>
     </section>
     
     <main>
-        <h2>Últimos doadores</h2>
+        <h2>Últimos <span>doadores</span></h2>
         <section class="donors">
             <div class="donor">
                 <div class="blood">AB+</div>
                 <p>Diego</p>
             </div>
+
+            <div class="donor">
+                    <div class="blood">AB+</div>
+                    <p>Diego Nome Maior</p>
+                </div>
+                <div class="donor">
+                        <div class="blood">AB+</div>
+                        <p>Diego</p>
+                    </div>
+                    <div class="donor">
+                            <div class="blood">AB+</div>
+                            <p>Diego</p>
+                        </div>
+
         </section>
     </main>
     <footer> Com ❤ LLoma93 
-        <p> + RocketSeat</p>
+        <p class="rocket"> + RocketSeat</p>
     </footer>
 </body>
 
